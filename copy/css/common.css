@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+#header {
+    position: relative;
+    max-width: 1170px;
+    margin: 20px auto;
+    height: 80px;
+    z-index:9999;
+}
+
+#header > a {
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#navGroup {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    color: white;
+}
+
+#navGroup .nav {
+    float: left;
+    width: 90%;
+    margin: auto 0;
+    height: 100%;
+}
+#navGroup .nav > .depth1 {
+    height: 100%;
+}
+
+#navGroup .nav > .depth1 > li {
+    float: left;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1em;
+    position: relative;
+    cursor: pointer;
+}
+
+
+#navGroup .nav > .depth1 > li > a {
+    display: block;
+    margin-top: 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.35);
+    display: block;
+}
+
+
+#navGroup .nav > .depth1 > li:nth-child(4) > a:hover {
+    transition: all .5s;
+    color: rgba(255, 255, 255, 0.45)
+}
+
+#navGroup .nav > .depth1 > li:last-child a {
+    border: none;
+}
+
+#navGroup .nav2 {
+    float: right;
+    width: 10%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 40px;
+    text-align: right;
+}
+#navGroup .nav2 > .depth1 > li {
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);;
+}
+
+#navGroup .nav2 > .depth1 > li > a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    width: 100%;
+    text-align: center;
+    padding:5px 0;
+    display: block;
+}
+
+#navGroup .nav2 > .depth1 > li:last-child a {
+    border: none;
+}
+
+#navGroup .nav .depth1 > li.on .depth2 {
+    opacity: 1;
+    transition: all .5s;
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+#navGroup .nav > .depth1 > li .depth2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 13px 23px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#navGroup .nav > .depth1 > li .depth2 a{
+    display: block;
+    padding: 9px 5px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+
+
+
+
+
+
+
